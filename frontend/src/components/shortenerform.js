@@ -12,7 +12,7 @@ function ShortenerForm({ onShorten }) {
     setLoading(true);
     try {
       // const res = await fetch("http://localhost:8000/shorten", {
-      const res = await fetch("https://assessment-b4na.onrender.com", {
+      const res = await fetch("https://assessment-b4na.onrender.com/shorten", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
