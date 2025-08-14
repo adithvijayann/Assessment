@@ -54,8 +54,8 @@ app = FastAPI(title="URL Shortener API", version="1.0")
 
 app.add_middleware(
     CORSMiddleware,
-    # allow_origins=["http://localhost:8080"],  # Change to your frontend URL
-    allow_origins=["https://assessment-1-g0d3.onrender.com"],
+     allow_origins=["http://localhost:8080"],  # Change to your frontend URL
+    # allow_origins=["https://assessment-1-g0d3.onrender.com"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
