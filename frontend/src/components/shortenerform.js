@@ -11,7 +11,8 @@ function ShortenerForm({ onShorten }) {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8000/shorten", {
+      // const res = await fetch("http://localhost:8000/shorten", {
+      const res = await fetch("https://assessment-b4na.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
